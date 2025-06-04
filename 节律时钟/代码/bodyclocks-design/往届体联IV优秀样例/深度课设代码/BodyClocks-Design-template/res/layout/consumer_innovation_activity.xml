@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin"
+    android:orientation="vertical" >
+
+    <TableLayout
+        android:id="@+id/psi_theoretical_value"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:stretchColumns="0,1,2,3,4,5" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="【PSI理论值】" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="P（体力）" />
+
+            <TextView
+                android:id="@+id/p_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="临界" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="S（情绪）" />
+
+            <TextView
+                android:id="@+id/s_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="低潮" />
+
+            <TextView
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="I（智力）" />
+
+            <TextView
+                android:id="@+id/i_value"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:layout_weight="1"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="低潮" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/psi_theoretical_value"
+        android:layout_margin="@dimen/default_margin"
+        android:layout_marginEnd="@dimen/offset"
+        android:layout_marginStart="@dimen/offset"
+        android:orientation="horizontal"
+        android:weightSum="3" >
+
+        <RadioGroup
+            android:id="@+id/p_choose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="体力节律"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:background="@color/light_pink"
+                android:gravity="center"
+                android:textStyle="bold" />
+
+            <RadioButton
+                android:id="@+id/p_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律高潮期"
+                 />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="体力充沛，身体灵活，动作敏捷，耐力和爆发力强，充满活力，能担负较大负荷的体力劳动，劳累后恢复得快。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                 />
+            
+            <RadioButton
+                android:id="@+id/p_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律临界日" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="抵抗力低，免疫功能差，身体软弱无力，极易疲劳。易受外来各种不良因素的侵袭。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                 />
+            <RadioButton
+                android:id="@+id/p_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律低潮期" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="身体乏力、懒散，耐力和爆发力较差，劳动时常感到力不从心，易疲劳。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                 />
+            
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/s_choose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="情绪节律"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:background="@color/bright_yellow"
+                android:gravity="center"
+                android:textStyle="bold" />
+            
+            <RadioButton
+                android:id="@+id/s_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律高潮期"
+                 />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="心情愉快，舒畅乐观，精力充沛，意志坚强，办事有信心，创造力、艺术感染力强。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                 />
+            
+            <RadioButton
+                android:id="@+id/s_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律临界日" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="情绪不稳定，烦躁易怒，心绪不宁，精力特别不易集中。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                 />
+            <RadioButton
+                android:id="@+id/s_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律低潮期" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="情绪低落，精神不振，意志比较消沉。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                />
+        </RadioGroup>
+
+        <RadioGroup
+            android:id="@+id/i_choose"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:orientation="vertical" >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="智力节律"
+                android:textSize="25dp"
+                android:textStyle="bold"
+                android:gravity="center_horizontal"
+                android:layout_marginTop="20dp"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                 />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:textSize="10dp"
+                android:background="@color/light_green"
+                android:gravity="center"
+                android:textStyle="bold" />
+            
+            <RadioButton
+                android:id="@+id/i_high"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律高潮期"
+                 />
+            
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="头脑灵活，思维敏捷，思路清晰，记忆力强，精力和注意力集中。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                 />
+            
+            <RadioButton
+                android:id="@+id/i_middle"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律临界日" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="判断力差、健忘、注意力涣散，严重者头脑发晕发胀，丢三忘四，工作中极易出差错和失误。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                 />
+            <RadioButton
+                android:id="@+id/i_low"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="0dp"
+                android:textSize="15dp"
+                android:text="生物节律低潮期" />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:text="思维显得迟钝，记忆力较弱。"
+                android:textSize="10dp"
+                android:layout_marginLeft="50dp"
+                android:layout_marginRight="20dp"
+                />
+        </RadioGroup>
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="30dp"
+        android:gravity="center"
+        android:orientation="horizontal" >
+
+        <Button
+            android:id="@+id/button_set_ok"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pressed"
+            android:layout_marginRight="10dp"
+            android:text="我选好啦"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+        
+        <Button
+            android:id="@+id/button_save"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pressed"
+            android:layout_marginRight="10dp"
+            android:text="保存"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+
+        <Button
+            android:id="@+id/button_check_record"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/button_pressed"
+            android:text="查看个人PSI记录"
+            android:textColor="@color/white"
+            android:textSize="15dp" />
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,206 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/defautr_margin" >
+
+    <TableLayout
+        android:id="@+id/work_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:stretchColumns="0,1,2,3,4,5,6" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="【设备工作参数显示】" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="[设备温度(℃)]" />
+
+            <TextView
+                android:id="@+id/watchTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="[剩余电量(%)]" />
+
+            <TextView
+                android:id="@+id/watchRemainPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="[工作状态]" />
+
+            <TextView
+                android:id="@+id/watchWorkState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="正常" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/deepDesignOrder_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/offset"
+        android:layout_marginStart="@dimen/offset"
+        android:stretchColumns="0,1,2,3,4,5,6,7" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/simplest_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_pressed"
+                android:text="最简模式"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/group_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/lea_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/log_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/req_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/opt_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/sho_info" />
+
+            <Button
+                android:id="@+id/exit_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_pressed"
+                android:text="退出"
+                android:textColor="@color/white" />
+        </TableRow>
+    </TableLayout>
+
+    <RelativeLayout
+        android:id="@+id/my_clocks_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/deepDesignOrder_layout"
+        android:layout_below="@id/work_state_layout"
+        android:layout_centerInParent="true" >
+
+        <ImageView
+            android:id="@+id/my_birth_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_margin="1sp" />
+
+        <ImageView
+            android:id="@+id/my_sun_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentLeft="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="1sp"
+            android:layout_toLeftOf="@id/my_birth_clock" />
+
+        <ImageView
+            android:id="@+id/my_local_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentLeft="true"
+            android:layout_margin="1sp"
+            android:layout_toLeftOf="@id/my_birth_clock" />
+
+        <ImageView
+            android:id="@+id/my_meridian_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_alignParentTop="true"
+            android:layout_margin="1sp"
+            android:layout_toRightOf="@id/my_birth_clock" />
+
+        <ImageView
+            android:id="@+id/my_acupoint_clock"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:layout_alignParentRight="true"
+            android:layout_margin="1sp"
+            android:layout_toRightOf="@id/my_birth_clock" />
+    </RelativeLayout>
+
+</RelativeLayout>

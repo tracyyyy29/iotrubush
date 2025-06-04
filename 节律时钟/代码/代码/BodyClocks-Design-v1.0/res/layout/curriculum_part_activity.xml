@@ -1,0 +1,296 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/defautr_margin"
+    tools:context=".CurriculumPartActivity" >
+
+    <RelativeLayout
+        android:id="@+id/infos_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true" >
+
+        <TextView
+            android:id="@+id/groupInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/textview_finished"
+            android:text="小组摘要信息"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/leaInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/groupInfoTextView"
+            android:background="@drawable/textview_finished"
+            android:text="组    长未点名"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/logInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/leaInfoTextView"
+            android:background="@drawable/textview_finished"
+            android:text="周志员未点名"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/reqInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/logInfoTextView"
+            android:background="@drawable/textview_finished"
+            android:text="需求员未点名"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/optInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/reqInfoTextView"
+            android:background="@drawable/textview_finished"
+            android:text="优裁员未点名"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+
+        <TextView
+            android:id="@+id/shoInfoTextView"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/optInfoTextView"
+            android:background="@drawable/textview_finished"
+            android:text="展示员未点名"
+            android:textColor="@color/white"
+            android:textSize="20sp" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/btns_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_centerVertical="true" >
+
+        <ImageView
+            android:id="@+id/imageView1"
+            android:layout_width="130sp"
+            android:layout_height="330sp"
+            android:layout_alignParentTop="true"
+            android:background="@drawable/bg" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton1"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@id/imageView1"
+            android:layout_alignTop="@id/imageView1"
+            android:layout_marginRight="5sp"
+            android:layout_marginTop="5sp"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/toggleButton1"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@id/toggleButton1"
+            android:text="1"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton2"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@id/toggleButton1"
+            android:layout_below="@id/toggleButton1"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView2"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/toggleButton2"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@id/toggleButton2"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton3"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@id/toggleButton2"
+            android:layout_below="@id/toggleButton2"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView3"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/toggleButton3"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@id/toggleButton3"
+            android:text="3"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton4"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@id/toggleButton3"
+            android:layout_below="@id/toggleButton3"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView4"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/toggleButton4"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@id/toggleButton4"
+            android:text="4"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton5"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@id/toggleButton4"
+            android:layout_below="@id/toggleButton4"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView5"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/toggleButton5"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@id/toggleButton5"
+            android:text="5"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton6"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@id/toggleButton5"
+            android:layout_below="@id/toggleButton5"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView6"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/toggleButton6"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@id/toggleButton6"
+            android:text="6"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton7"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@id/toggleButton6"
+            android:layout_below="@id/toggleButton6"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView7"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@id/toggleButton7"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@id/toggleButton7"
+            android:text="7"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+
+        <ToggleButton
+            android:id="@+id/toggleButton8"
+            android:layout_width="100sp"
+            android:layout_height="40sp"
+            android:layout_alignRight="@+id/toggleButton7"
+            android:layout_below="@id/toggleButton7"
+            android:background="@drawable/toggle_btn_bg_selector"
+            android:textOff=""
+            android:textOn="" />
+
+        <TextView
+            android:id="@+id/textView8"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignBaseline="@+id/toggleButton8"
+            android:layout_marginLeft="5sp"
+            android:layout_marginRight="5sp"
+            android:layout_toLeftOf="@id/toggleButton8"
+            android:text="8"
+            android:textColor="@color/white"
+            android:textSize="16sp" />
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/exit_btn1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentRight="true"
+        android:layout_alignLeft="@id/infos_layout"
+        android:background="@drawable/button_pressed"
+        android:text="退出"
+        android:textColor="@color/white" />
+    
+    <Button
+        android:id="@+id/deepDesign_btn"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentLeft="true"
+        android:layout_alignRight="@+id/btns_layout"
+        android:layout_alignBottom="@id/exit_btn1"
+        android:background="@drawable/button_pressed"
+        android:text="进入深度课设"
+        android:textColor="@color/white" />
+
+    <ImageView
+        android:id="@+id/my_clock"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true" />
+
+</RelativeLayout>
