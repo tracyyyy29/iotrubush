@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector xmlns:android="http://schemas.android.com/apk/res/android" >
+    <!-- 调用样式文件shape_textview_finished.xml -->
+    <item android:drawable="@drawable/shape_textview_finished"
+          android:state_pressed="true"/>
+    <!-- 调用样式文件shape_textview.xml -->
+    <item android:drawable="@drawable/shape_textview"
+          android:state_pressed="false"/>
+
+</selector>

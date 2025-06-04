@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">17#NK2024-BodyIV-Clocks-Design-template</string>
+    <string name="app_name_cutticulum_part">17#NK2024-BodyIV-CurriculumDesign-Part</string>
+    <string name="app_name_deep_part">17#NK2024-BodyIV-重生之我是哥白尼</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="group_info">【体联IV】17#</string>
+    <string name="lea_info">【组长】孙致勉</string>
+    <string name="log_info">【周志员】陈恩宝</string>
+    <string name="req_info">【需求员】原敬闰</string>
+        <string name="req_plus_info">【需求员+】原敬闰</string>
+    <string name="opt_info">【优裁员】贾程皓</string>
+    <string name="sho_info">【展示员】张译仁</string>
+</resources>

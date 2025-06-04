@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+	<string name="app_name">15#NK2023-BodyIV-Clocks-Design-template</string>
+    <string name="app_name_cutticulum_part">15#NK2023-BodyIV-CurriculumDesign-Part</string>
+    <string name="app_name_deep_part">15#NK2023-BodyIV-伟大的五时穿戴表</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="action_settings">Settings</string>
+    <string name="group_info">【体联IV】15#</string>
+    <string name="lea_info">【组长】刘耀月</string>
+    <string name="log_info">【周志员】宋雪菲</string>
+    <string name="req_info">【需求员】牛雪力</string>
+    <string name="req_plus_info">【需求员+】申杰予</string>
+    <string name="opt_info">【优裁员】王镜朝</string>
+    <string name="sho_info">【展示员】吴东樵</string>
+</resources>

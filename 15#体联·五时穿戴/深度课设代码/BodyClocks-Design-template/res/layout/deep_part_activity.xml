@@ -1,0 +1,283 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_margin="@dimen/default_margin" >
+
+    <TableLayout
+        android:id="@+id/work_state_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:stretchColumns="0,1,2,3,4,5,6" >
+
+        <TableRow>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="【设备工作参数显示】" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="[设备温度(℃)]" />
+
+            <TextView
+                android:id="@+id/watchTemperature"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="30" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="[剩余电量(%)]" />
+
+            <TextView
+                android:id="@+id/watchRemainPower"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="100" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="[工作状态]" />
+
+            <TextView
+                android:id="@+id/watchWorkState"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="正常" />
+        </TableRow>
+    </TableLayout>
+
+    <TableLayout
+        android:id="@+id/deep_design_order_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginEnd="@dimen/offset"
+        android:layout_marginStart="@dimen/offset"
+        android:stretchColumns="0,1,2,3,4,5,6,7" >
+
+        <TableRow>
+
+            <Button
+                android:id="@+id/simplest_btn"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:background="@drawable/button_pressed"
+                android:text="最简模式"
+                android:textColor="@color/white" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/group_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/lea_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/log_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/req_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/req_plus_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/opt_info" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="1sp"
+                android:background="@color/dark_gray"
+                android:gravity="center"
+                android:text="@string/sho_info" />
+
+            <Button
+                android:id="@+id/exit_btn2"
+                android:layout_width="wrap_content"
+                android:layout_height="match_parent"
+                android:background="@drawable/button_pressed"
+                android:text="退出"
+                android:textColor="@color/white" />
+        </TableRow>
+    </TableLayout>
+
+    <LinearLayout
+        android:id="@+id/center_part_layout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@id/deep_design_order_layout"
+        android:layout_below="@id/work_state_layout"
+        android:orientation="horizontal" >
+
+        <ListView
+            android:id="@+id/list_view"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_margin="@dimen/default_margin"
+            android:layout_weight="2"
+            android:descendantFocusability="blocksDescendants" />
+
+        <ImageView
+            android:id="@+id/clock_image"
+            android:layout_width="0sp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="7" />
+
+        <RelativeLayout
+            android:id="@+id/right_center_part_layout"
+            android:layout_width="0sp"
+            android:layout_height="match_parent"
+            android:layout_weight="6" >
+
+            <TextView
+                android:id="@+id/title_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentTop="true"
+                android:layout_margin="@dimen/offset"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="附  加  信  息  显  示  区"
+                android:textStyle="bold" />
+
+            <Button
+                android:id="@+id/psi_record_btn"
+                android:layout_width="120dp"
+                android:textSize="15dp"
+                android:layout_height="25dp"
+                android:layout_margin="@dimen/offset"
+                android:layout_alignParentBottom="true"
+                android:background="@drawable/button_pressed"
+                android:text="查看PSI记录"
+                
+                android:textColor="@color/white" />
+            
+            <Button
+                android:id="@+id/set_PSI_btn"
+                android:layout_width="120dp"
+               android:textSize="15dp"
+                android:layout_height="25dp"
+                android:layout_above="@id/psi_record_btn"
+                android:layout_margin="@dimen/offset"
+                android:background="@drawable/button_pressed"
+                android:text="PSI消创反馈"
+                android:textColor="@color/white" />
+            
+            <Button
+                android:id="@+id/set_birth_btn"
+                android:layout_width="120dp"
+                android:textSize="15dp"
+                android:layout_height="25dp"
+                android:layout_above="@id/set_PSI_btn"
+                android:layout_margin="@dimen/offset"
+                android:background="@drawable/button_pressed"
+                android:text="设置出生时间"
+                android:textColor="@color/white" />
+
+            
+
+            
+
+            <TextView
+                android:id="@+id/info_text"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_above="@id/set_birth_btn"
+                android:layout_below="@id/title_text"
+                android:layout_margin="@dimen/offset"
+                android:background="@color/light_gary"
+                android:text="附加信息" />
+
+            <TextView
+                android:id="@+id/test_title"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/info_text"
+                android:layout_margin="@dimen/offset"
+                android:layout_toRightOf="@id/set_birth_btn"
+                android:background="@color/light_gary"
+                android:gravity="center"
+                android:text="测 试 信 息 显 示 区" />
+
+            <ScrollView
+                android:id="@+id/scroll_view"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_alignParentBottom="true"
+                android:layout_below="@id/test_title"
+                android:layout_margin="@dimen/offset"
+                android:layout_toRightOf="@id/set_birth_btn"
+                android:fillViewport="true" >
+
+                <TextView
+                    android:id="@+id/test_text"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentBottom="true"
+                    android:background="@color/light_gary"
+                    android:text="测试信息显示已禁用，请按“0”恢复" />
+            </ScrollView>
+        </RelativeLayout>
+    </LinearLayout>
+
+</RelativeLayout>
